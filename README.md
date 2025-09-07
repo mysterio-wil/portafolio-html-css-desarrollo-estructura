@@ -3,14 +3,14 @@
 <div align="center">
   <!-- Badges de estado, versión, licencia, etc. -->
   <img src="https://img.shields.io/badge/STATUS-En_desarrollo-yellow" alt="Estado">
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="Licencia">
-  <img src="https://img.shields.io/badge/version-1.0.0-green" alt="Version">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue" alt="Licencia"></a>
+  <a href="https://github.com/mysterio-wil/portafolio-html-css-desarrollo-estructura/releases" target="_blank" rel="noreferrer noopener nofollow"><img src="https://img.shields.io/badge/version-1.0.0-green" alt="Version"></a>
 </div>
 
 <div align="center">
   <!-- Badges de tecnologías -->
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <a href="https://developer.mozilla.org/es/docs/Web/HTML/HTML5" target="_blank" rel="noreferrer noopener nofollow"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></a>
+  <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS3" target="_blank" rel="noreferrer noopener nofollow"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a>
 </div>
 
 ## Índice
