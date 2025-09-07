@@ -1,14 +1,13 @@
-<h1 align="center">Portafolio HTML y CSS</h1>
-<p align="center">
-  <img src="assets/html5.png" alt="Logo de HTML5" width="200" />
-</p>
+# Portafolio HTML y CSS
 
-<p align="center">
-  <!-- Badges como estado, versión, licencia, etc. -->
-  ![Estado](https://img.shields.io/badge/STATUS-En_desarrollo-yellow)
-  ![Licencia](https://img.shields.io/badge/License-MIT-blue)
-  ![Version](https://img.shields.io/badge/version-1.0.0-green)
-</p>
+![Logo de HTML5](assets/html5.png)
+
+<!-- Badges como estado, versión, licencia, etc. -->
+![Estado](https://img.shields.io/badge/STATUS-En_desarrollo-yellow)
+![Licencia](https://img.shields.io/badge/License-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ## Índice
 * [Descripción](#descripción)
