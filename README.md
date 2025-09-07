@@ -1,9 +1,5 @@
 <h1 align="center">Portafolio HTML y CSS</h1>
 
-<p align="center">
-  <img src="assets/html5.png" alt="Logo de HTML5" width="200" />
-</p>
-
 <div align="center">
   <!-- Badges de estado, versión, licencia, etc. -->
   <img src="https://img.shields.io/badge/STATUS-En_desarrollo-yellow" alt="Estado">
