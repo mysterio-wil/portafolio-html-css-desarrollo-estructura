@@ -111,10 +111,6 @@ body{
         font-size: 1.5rem;
     }
 
-    .presentacion__enlaces {
-        flex-direction: column;
-    }
-
     .presentacion__enlaces__subtitulo {
         font-size: 1.5rem;
     }
