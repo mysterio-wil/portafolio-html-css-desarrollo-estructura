@@ -29,7 +29,7 @@ body{
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .presentacion__contenido__titulo {
@@ -46,21 +46,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-between;
 }
 
+.presentacion__enlaces__subtitulo {
+    font-size: 1.2rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+}
+
 .presentacion__enlaces__btn {
-    width: 280px;
-    background-color: #22D4FD;
+    width: 90%;
     text-align: center;
-    padding: 21.5px 0;
-    border-radius: 16px;
+    padding: 1.34rem 0;
+    border-radius: 0.5rem;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
-    color: #000000;
+    color: #F6F6F6;
+    border: 2px solid #22D4FD;
+}
+
+.presentacion__enlaces__btn:hover {
+    background-color: #272727;
 }
 
 .presentacion__imagen {
@@ -74,23 +84,28 @@ body{
     }
 
     .presentacion-contenido {
-        width: 615px;
+        width: 38.4rem;
     }
 
     .presentacion__contenido__titulo {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .presentacion__contenido__texto {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .presentacion__enlaces {
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .presentacion__enlaces__subtitulo {
+        font-size: 1.5rem;
     }
 
     .presentacion__enlaces__btn {
-        font-size: 24px;
+        width: 378px;
+        font-size: 1.5rem;
     }
 
     .presentacion__imagen {

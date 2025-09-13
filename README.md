@@ -48,7 +48,7 @@ cd portafolio-html-css-desarrollo-estructura
 
 ##  Tecnologías utilizadas
 - HTML5
-- CSS3
+- CSS3 (con enfoque Mobile First y unidades relativas)
 
 ##  Contribuidores
 | [<img src="https://github.com/mysterio-wil.png" width="100"><br><sub>mysterio-wil</sub>](https://github.com/mysterio-wil) |
