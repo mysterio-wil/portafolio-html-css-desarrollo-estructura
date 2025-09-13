@@ -6,6 +6,9 @@
 }
 
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -101,6 +104,7 @@ body{
 }
 
 .footer {
+    margin-top: auto;
     text-align: center;
     padding: 1.5rem;
     background-color: #22D4FD;
@@ -117,7 +121,7 @@ body{
     }
 
     .presentacion-contenido {
-        width: 38.4rem;
+        width: 100%;
     }
 
     .presentacion__contenido__titulo {
