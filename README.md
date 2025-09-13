@@ -25,7 +25,7 @@
 * [Licencia](#licencia)
 
 ##  Descripción
-Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades. Este proyecto sigue un enfoque **Mobile First**.
+Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades. Este proyecto sigue un enfoque **Mobile First**. Durante su desarrollo, se ha puesto énfasis en la responsividad, la accesibilidad y la implementación de patrones de diseño modernos.
 
 ##  Estado
 :construction: Proyecto en desarrollo. Versión actual: v1.0.0.
@@ -33,6 +33,10 @@ Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades.
 ##  Funcionalidades
 - **Sección de presentación**: Muestra una introducción sobre el desarrollador y enlaces a sus redes sociales.
 - **Botones de redes sociales**: Botones estilizados para LinkedIn y GitHub.
+- **Navegación Multi-página**: Incluye páginas para 'Home', 'Sobre mí' y 'Currículum'.
+- **Menú de Navegación Responsive**: Implementación de un menú de hamburguesa CSS-only para una experiencia de usuario óptima en dispositivos móviles.
+- **Sticky Footer**: El pie de página se mantiene siempre visible en la parte inferior de la ventana, independientemente de la longitud del contenido.
+- **Página de Currículum**: Contenido estructurado del perfil de LinkedIn.
 
 ##  Demostración
 _(Aquí puedes agregar capturas de pantalla o GIFs de tu portafolio)_
@@ -49,6 +53,8 @@ cd portafolio-html-css-desarrollo-estructura
 ##  Tecnologías utilizadas
 - HTML5
 - CSS3 (con enfoque Mobile First y unidades relativas)
+- Flexbox (para layouts responsivos y sticky footer)
+- Media Queries (para adaptación a diferentes tamaños de pantalla)
 
 ##  Contribuidores
 | [<img src="https://github.com/mysterio-wil.png" width="100"><br><sub>mysterio-wil</sub>](https://github.com/mysterio-wil) |
