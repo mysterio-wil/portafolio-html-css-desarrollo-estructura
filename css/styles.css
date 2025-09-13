@@ -21,10 +21,14 @@ body{
     align-items: center;
     margin: 10%;
     justify-content: space-between;
+    
 }
 
 .presentacion-contenido {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .presentacion__contenido__titulo {
