@@ -32,6 +32,7 @@ Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades.
 
 ##  Funcionalidades
 - **Sección de presentación**: Muestra una introducción sobre el desarrollador y enlaces a sus redes sociales.
+- **Botones de redes sociales**: Botones estilizados para LinkedIn y GitHub.
 
 ##  Demostración
 _(Aquí puedes agregar capturas de pantalla o GIFs de tu portafolio)_
