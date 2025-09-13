@@ -6,7 +6,6 @@
 }
 
 body{
-    height: 100vh;
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -82,6 +81,16 @@ body{
 
 .presentacion__imagen {
     max-width: 80%;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #22D4FD;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 @media (min-width: 1024px) {
