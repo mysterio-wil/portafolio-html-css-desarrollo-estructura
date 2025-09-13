@@ -31,9 +31,7 @@ Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades.
 :construction: Proyecto en desarrollo. Versión actual: v1.0.0.
 
 ##  Funcionalidades
-- **Funcionalidad 1**: Descripción breve.
-- **Funcionalidad 2**: Descripción breve.
-- **Funcionalidad 3**: Descripción breve.
+- **Sección de presentación**: Muestra una introducción sobre el desarrollador y enlaces a sus redes sociales.
 
 ##  Demostración
 _(Aquí puedes agregar capturas de pantalla o GIFs de tu portafolio)_
