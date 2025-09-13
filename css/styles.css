@@ -73,8 +73,12 @@ body{
 }
 
 /* Hide regular menu on mobile by default */
+.header__menu-checkbox {
+    display: none; /* Hide the actual checkbox */
+}
+
 .header__menu {
-    display: none;
+    display: none; /* Hidden by default */
     flex-direction: column; /* Stack links vertically in mobile menu */
     position: absolute;
     top: 0;
@@ -87,8 +91,8 @@ body{
     z-index: 999;
 }
 
-/* Show menu when active (will be toggled by JS) */
-body.menu-open .header__menu {
+/* Show menu when checkbox is checked */
+#menu-toggle:checked ~ .header__menu {
     display: flex;
 }
 
