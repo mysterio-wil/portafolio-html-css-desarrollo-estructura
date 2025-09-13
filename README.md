@@ -25,7 +25,7 @@
 * [Licencia](#licencia)
 
 ##  Descripción
-Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades.
+Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades. Este proyecto sigue un enfoque **Mobile First**.
 
 ##  Estado
 :construction: Proyecto en desarrollo. Versión actual: v1.0.0.
