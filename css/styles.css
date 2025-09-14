@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --color-primario: #2D2424;
+    --color-secundario: #5C3D2E;
+    --color-terciario: #B85C38;
+    --color-hover: #E0C097;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
 * {
     padding: 0;
     margin:0;
@@ -10,8 +20,8 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .header {
@@ -28,7 +38,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--color-terciario);
 }
 
 /* Base styles for hamburger menu (mobile-first) */
@@ -48,7 +58,7 @@ body{
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #22D4FD; /* Color of the hamburger lines */
+    background-color: var(--color-terciario); /* Color of the hamburger lines */
     position: relative;
     transition: background-color 0.3s ease;
 }
@@ -59,7 +69,7 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     position: absolute;
     transition: transform 0.3s ease;
 }
@@ -85,7 +95,7 @@ body{
     left: 0;
     width: 100%;
     height: 100vh; /* Full viewport height */
-    background-color: #000000; /* Background for mobile menu */
+    background-color: var(--color-primario); /* Background for mobile menu */
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -113,7 +123,7 @@ body{
 }
 
 .titulo-destaque {
-    color: #22D4FD; ;
+    color: var(--color-terciario); ;
 }
 
 .presentacion__contenido__titulo {
@@ -149,8 +159,8 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,9 +168,9 @@ body{
 }
 
 .presentacion__enlaces__btn:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
     transition: 0.3s;
-    border: 2px solid #a2a2f7;
+    border: 2px solid var(--color-secundario);
     cursor: pointer;
 }
 
@@ -172,8 +182,8 @@ body{
     margin-top: auto;
     text-align: center;
     padding: 1.5rem;
-    background-color: #22D4FD;
-    color: #000000;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
