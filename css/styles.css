@@ -179,6 +179,7 @@ body{
 
 .presentacion__imagen {
     width: 50%;
+    padding-top: 2rem; /* Added top padding for mobile-first */
 }
 
 .footer {
@@ -218,6 +219,7 @@ body{
 
     .presentacion__contenido__titulo {
         font-size: 2.25rem;
+        padding-top: 0; /* Remove top padding for desktop */
     }
 
     .presentacion__contenido__texto {
