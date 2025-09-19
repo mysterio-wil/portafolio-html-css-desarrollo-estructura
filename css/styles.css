@@ -134,6 +134,7 @@ body{
 .presentacion__contenido__titulo {
     font-size: 1.5rem;
     font-family: var(--fuente-krona);
+    margin: 0;
 }  
 
 .presentacion__contenido__texto {
@@ -210,7 +211,7 @@ body{
     }
 
     .presentacion {
-        padding: 10%;
+        padding: 5% 10%;
         flex-direction: row;
     }
 
