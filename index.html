@@ -9,11 +9,10 @@
 </head>
 <body>
     <header class="header">
-        <input type="checkbox" id="menu-toggle" class="header__menu-checkbox">
-        <label for="menu-toggle" class="header__menu-toggle" aria-label="Toggle menu">
+        <button class="header__menu-toggle" aria-label="Abrir menú" aria-controls="main-menu" aria-expanded="false">
             <span class="header__menu-toggle-icon"></span>
-        </label>
-        <nav class="header__menu">
+        </button>
+        <nav class="header__menu" id="main-menu">
             <a class="header__menu__link" href="index.html">Home</a>
             <a class="header__menu__link" href="about.html">Sobre mí</a>
             <a class="header__menu__link" href="curriculum.html">Currículum</a>
@@ -39,5 +38,6 @@
     <footer class="footer">
         <p>&copy; 2025 Wilmer Gulcochia Sanchez. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

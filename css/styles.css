@@ -87,10 +87,7 @@ body{
     top: 8px;
 }
 
-/* Hide regular menu on mobile by default */
-.header__menu-checkbox {
-    display: none; /* Hide the actual checkbox */
-}
+
 
 .header__menu {
     display: none; /* Hidden by default */
@@ -106,8 +103,8 @@ body{
     z-index: 999;
 }
 
-/* Show menu when checkbox is checked */
-#menu-toggle:checked ~ .header__menu {
+/* Show menu when is-open class is present */
+.header__menu.is-open {
     display: flex;
 }
 
