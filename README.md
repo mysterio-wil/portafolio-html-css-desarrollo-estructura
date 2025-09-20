@@ -42,6 +42,9 @@ Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades.
 - **Sticky Footer**: El pie de página se mantiene siempre visible en la parte inferior de la ventana.
 - **Iconos de Font Awesome**: Se reemplazaron los iconos de imágenes por iconos de Font Awesome para mejorar la personalización y el rendimiento.
 - **Iconos en el menú de navegación**: Se agregaron iconos al menú de navegación para mejorar la experiencia de usuario.
+- **Switch de Tema (Modo Claro/Oscuro)**: Se ha implementado un interruptor para cambiar entre un tema claro y uno oscuro, mejorando la experiencia de usuario según la preferencia de visualización. La preferencia se guarda en el almacenamiento local del navegador.
+- **Ajustes de Diseño en Currículum**: Se ha mejorado la maquetación de la página de currículum, corrigiendo la alineación de las listas y añadiendo un espaciado consistente entre los títulos y el texto para una mejor legibilidad.
+- **Consistencia Visual**: Se ha añadido la imagen de perfil en la página "Sobre mí" para mantener la consistencia visual a través del sitio.
 
 ##  Demostración
 _(Aquí puedes agregar capturas de pantalla o GIFs de tu portafolio)_
