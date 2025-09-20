@@ -247,3 +247,7 @@ body{
 .presentacion__enlaces__btn i {
     color: var(--color-terciario);
 }
+
+.header__menu__link i {
+    font-size: 1.2rem;
+}
