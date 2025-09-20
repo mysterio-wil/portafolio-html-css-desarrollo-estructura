@@ -7,10 +7,10 @@
 }
 
 :root {
-    --color-primario: #2D2424;
-    --color-secundario: #5C3D2E;
-    --color-terciario: #B85C38;
-    --color-hover: #E0C097;
+    --color-primario: #212121;
+    --color-secundario: #F4F4F4;
+    --color-terciario: #3498DB;
+    --color-hover: #9E9E9E;
 
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
@@ -176,7 +176,7 @@ body{
 .presentacion__enlaces__btn:hover {
     background-color: var(--color-hover);
     transition: 0.3s;
-    border: 2px solid var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     cursor: pointer;
 }
 
