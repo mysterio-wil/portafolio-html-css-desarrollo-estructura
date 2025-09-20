@@ -1,5 +1,8 @@
 <h1 align="center">Portafolio HTML y CSS</h1>
 
+<!-- Inserta aquí la imagen de portada de tu proyecto -->
+![portada](https://via.placeholder.com/1280x400.png?text=Imagen+de+Portada+del+Proyecto)
+
 <div align="center">
   <!-- Badges de estado, versión, licencia, etc. -->
   <img src="https://img.shields.io/badge/STATUS-En_desarrollo-yellow" alt="Estado">
@@ -53,11 +56,12 @@ cd portafolio-html-css-desarrollo-estructura
 ```
 
 ##  Tecnologías utilizadas
-- HTML5
-- CSS3 (con enfoque Mobile First y unidades relativas)
-- Flexbox (para layouts responsivos y sticky footer)
-- Media Queries (para adaptación a diferentes tamaños de pantalla)
-- CSS Custom Properties (Variables)
+- **HTML5**: Para la estructura y semántica del contenido.
+- **CSS3**: Para el diseño y la presentación, con un enfoque **Mobile First**.
+- **Flexbox**: Para la creación de layouts responsivos y la implementación del sticky footer.
+- **Media Queries**: Para adaptar el diseño a diferentes tamaños de pantalla y dispositivos.
+- **CSS Custom Properties (Variables)**: Para una gestión de estilos más eficiente y mantenible.
+- **Font Awesome**: Para el uso de iconos escalables y personalizables.
 
 ##  Contribuidores
 | [<img src="https://github.com/mysterio-wil.png" width="100"><br><sub>mysterio-wil</sub>](https://github.com/mysterio-wil) |
@@ -65,6 +69,12 @@ cd portafolio-html-css-desarrollo-estructura
 
 ##  Autoría
 [<img src="https://github.com/mysterio-wil.png" width="100"><br><sub>mysterio-wil</sub>](https://github.com/mysterio-wil)
+
+## 📚 Más información del curso
+
+Este proyecto fue desarrollado como parte del curso de [nombre del curso] de Alura Latam. ¡Inscríbete para aprender a crear tus propios proyectos web!
+
+[Link al curso](https://www.aluracursos.com/)
 
 ##  Licencia
 Este proyecto está bajo la licencia [MIT](LICENSE).
