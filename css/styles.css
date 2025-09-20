@@ -240,3 +240,7 @@ body{
         max-width: 50%;
     }
 }
+
+.presentacion__enlaces__btn i {
+    color: var(--color-terciario);
+}
