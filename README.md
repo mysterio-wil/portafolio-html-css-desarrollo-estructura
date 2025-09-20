@@ -37,6 +37,8 @@ Un portafolio simple creado con HTML y CSS para mostrar proyectos y habilidades.
 - **Página de Currículum**: Contenido estructurado y estilizado del perfil profesional, con un diseño responsivo.
 - **Refactorización de CSS**: Se centralizó la paleta de colores y las fuentes utilizando variables de CSS (custom properties) para mejorar la mantenibilidad y consistencia del diseño.
 - **Sticky Footer**: El pie de página se mantiene siempre visible en la parte inferior de la ventana.
+- **Iconos de Font Awesome**: Se reemplazaron los iconos de imágenes por iconos de Font Awesome para mejorar la personalización y el rendimiento.
+- **Iconos en el menú de navegación**: Se agregaron iconos al menú de navegación para mejorar la experiencia de usuario.
 
 ##  Demostración
 _(Aquí puedes agregar capturas de pantalla o GIFs de tu portafolio)_
