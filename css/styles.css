@@ -178,13 +178,14 @@ ul.presentacion__contenido__texto,
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .presentacion__enlaces__btn:hover {
     background-color: var(--color-hover);
     transition: 0.3s;
     border: 2px solid var(--color-terciario);
-    cursor: pointer;
 }
 
 .presentacion__imagen {
