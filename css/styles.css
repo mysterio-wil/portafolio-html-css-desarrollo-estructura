@@ -142,6 +142,11 @@ body{
     font-family: var(--fuente-montserrat);
 }
 
+ul.presentacion__contenido__texto {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
 .presentacion__enlaces {
     display: flex;
     flex-direction: column;
@@ -242,6 +247,10 @@ body{
     .presentacion__imagen {
         max-width: 50%;
     }
+
+    .theme-switch-wrapper {
+        right: 10%;
+    }
 }
 
 .presentacion__enlaces__btn i {
@@ -250,4 +259,93 @@ body{
 
 .header__menu__link i {
     font-size: 1.2rem;
+}
+
+/* Theme Switch */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 5rem; /* Adjust as needed */
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: var(--color-terciario);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider .fa-sun, .slider .fa-moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.slider .fa-sun {
+    left: 8px;
+}
+
+.slider .fa-moon {
+    right: 8px;
+}
+
+input:checked ~ .slider .fa-moon {
+    opacity: 1;
+}
+
+input:not(:checked) ~ .slider .fa-sun {
+    opacity: 1;
+}
+
+
+body.light-mode {
+    --color-primario: #F4F4F4;
+    --color-secundario: #212121;
 }

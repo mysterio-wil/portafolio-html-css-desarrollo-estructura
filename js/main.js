@@ -9,4 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
             mainMenu.classList.toggle('is-open');
         });
     }
+
+    const themeSwitch = document.getElementById('checkbox');
+    if (themeSwitch) {
+        themeSwitch.addEventListener('change', () => {
+            if (themeSwitch.checked) {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            if (currentTheme === 'light') {
+                document.body.classList.add('light-mode');
+                themeSwitch.checked = true;
+            }
+        }
+    }
 });
