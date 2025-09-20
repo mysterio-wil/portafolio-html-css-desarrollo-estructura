@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -31,23 +31,27 @@
     </header>
     <main class="presentacion">
         <section class="presentacion-contenido">
-            <h1 class="presentacion__contenido__titulo">Sobre mí</h1>
-            <p class="presentacion__contenido__texto">
-                ¡Hola! Soy Wilmer Gulcochia Sanchez, un desarrollador Full Stack y Analista de Datos apasionado por la tecnología.
-                Me especializo en transformar ideas en soluciones digitales funcionales y atractivas.
-                Mi experiencia abarca Java, React, HTML, CSS y JavaScript, lo que me permite construir desde interfaces de usuario dinámicas hasta robustos sistemas de backend.
-                Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer en el mundo del desarrollo de software.
-            </p>
-            <p class="presentacion__contenido__texto">
-                Fuera del código, disfruto explorando nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimientos con la comunidad.
-                Creo firmemente en la importancia de un aprendizaje continuo y en la aplicación de las mejores prácticas para entregar productos de alta calidad.
-                Si estás buscando un profesional dedicado y con ganas de hacer la diferencia, ¡me encantaría conectar!
-            </p>
+            <h1 class="presentacion__contenido__titulo">Contacto</h1>
+            <p class="presentacion__contenido__texto">¿Interesado en colaborar o tienes alguna pregunta? Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+            
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="presentacion__enlaces__btn">Enviar Mensaje</button>
+            </form>
+            <div id="form-status"></div>
+
         </section>
-        <img class="presentacion__imagen" src="assets/mi-foto.jpg" alt="Imagen de perfil de Wilmer Gulcochia">
     </main>
     <footer class="footer">
-        <p>&copy; 2025 Wilmer Gulcochia Sanchez.</p>
+        <p>&copy; 2025 Wilmer Gulcochia Sanchez. Todos los derechos reservados.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
