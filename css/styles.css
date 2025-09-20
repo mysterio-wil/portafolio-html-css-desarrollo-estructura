@@ -30,7 +30,10 @@ body{
 }
 
 .header {
-    padding: 2% 0 0% 10%;
+    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__menu {
@@ -55,10 +58,7 @@ body{
     background: none;
     border: none;
     cursor: pointer;
-    padding: 1rem;
-    position: absolute; /* Position it in the header */
-    top: 1rem;
-    right: 1rem;
+    padding: 1rem 0rem;
     z-index: 1000; /* Ensure it's above other content */
 }
 
@@ -216,7 +216,8 @@ ul.presentacion__contenido__texto,
         background-color: transparent; /* Reset background */
         flex-direction: row; /* Horizontal layout for desktop */
         justify-content: flex-start; /* Align links to start */
-        gap: 5.6rem; /* Restore desktop gap */
+        gap: 4rem; /* Restore desktop gap */
+        margin-right: auto;
     }
 
     .presentacion {
@@ -254,6 +255,7 @@ ul.presentacion__contenido__texto,
     .theme-switch-wrapper {
         right: 10%;
     }
+
 }
 
 .presentacion__enlaces__btn i {
@@ -268,16 +270,13 @@ ul.presentacion__contenido__texto,
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 1rem;
-    right: 5rem; /* Adjust as needed */
 }
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 30px;
     position: relative;
-    width: 60px;
+    width: 56px;
 }
 
 .theme-switch input {
@@ -299,11 +298,11 @@ ul.presentacion__contenido__texto,
     background-color: #fff;
     bottom: 4px;
     content: "";
-    height: 26px;
+    height: 22px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;
+    width: 22px;
 }
 
 input:checked + .slider {
