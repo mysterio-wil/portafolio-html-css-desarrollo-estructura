@@ -338,11 +338,11 @@ input:checked + .slider:before {
     right: 8px;
 }
 
-input:checked ~ .slider .fa-moon {
+input:checked + .slider .fa-sun {
     opacity: 1;
 }
 
-input:not(:checked) ~ .slider .fa-sun {
+input:not(:checked) + .slider .fa-moon {
     opacity: 1;
 }
 
