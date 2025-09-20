@@ -196,11 +196,11 @@ ul.presentacion__contenido__texto,
 .footer {
     margin-top: auto;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--color-terciario);
     color: var(--color-primario);
     font-family: var(--fuente-montserrat);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
