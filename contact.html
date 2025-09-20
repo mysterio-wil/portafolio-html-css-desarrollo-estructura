@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title data-key="contact-title">Contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,44 +14,55 @@
             <span class="header__menu-toggle-icon"></span>
         </button>
         <nav class="header__menu" id="main-menu">
-            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> Sobre mí</a>
-            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> Currículum</a>
-            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> <span data-key="home">Home</span></a>
+            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> <span data-key="about">Sobre mí</span></a>
+            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> <span data-key="curriculum">Currículum</span></a>
+            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-key="contact">Contacto</span></a>
         </nav>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </div>
-            </label>
+
+        <!-- 🔥 Controles unificados -->
+        <div class="header__controls">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+            <select class="language-select" id="language-select">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
         </div>
     </header>
+
     <main class="presentacion">
         <section class="presentacion-contenido">
-            <h1 class="presentacion__contenido__titulo">Contacto</h1>
-            <p class="presentacion__contenido__texto">¿Interesado en colaborar o tienes alguna pregunta? Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+            <h1 class="presentacion__contenido__titulo" data-key="contact-title">Contacto</h1>
+            <p class="presentacion__contenido__texto" data-key="contact-intro">
+                ¿Interesado en colaborar o tienes alguna pregunta? Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.
+            </p>
             
             <form class="contact-form" action="https://formspree.io/f/mzzanoaz" method="POST">
-                <label for="name">Nombre:</label>
+                <label for="name" data-key="form-name-label">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 
-                <label for="email">Email:</label>
+                <label for="email" data-key="form-email-label">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="message">Mensaje:</label>
+                <label for="message" data-key="form-message-label">Mensaje:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 
-                <button type="submit" class="presentacion__enlaces__btn">Enviar Mensaje</button>
+                <button type="submit" class="presentacion__enlaces__btn" data-key="form-submit">Enviar Mensaje</button>
             </form>
             <div id="form-status"></div>
-
         </section>
     </main>
+
     <footer class="footer">
-        <p>&copy; 2025 Wilmer Gulcochia Sanchez.</p>
+        <p data-key="footer-text">&copy; 2025 Wilmer Gulcochia Sanchez.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

@@ -14,31 +14,40 @@
             <span class="header__menu-toggle-icon"></span>
         </button>
         <nav class="header__menu" id="main-menu">
-            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> Sobre mí</a>
-            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> Currículum</a>
-            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> <span data-key="home">Home</span></a>
+            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> <span data-key="about">Sobre mí</span></a>
+            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> <span data-key="curriculum">Currículum</span></a>
+            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-key="contact">Contacto</span></a>
         </nav>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </div>
-            </label>
+
+        <!-- 🔥 Controles (tema + idioma) -->
+        <div class="header__controls">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+            <select class="language-select" id="language-select">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
         </div>
     </header>
+
     <main class="presentacion">
         <section class="presentacion-contenido">
-            <h1 class="presentacion__contenido__titulo">Sobre mí</h1>
-            <p class="presentacion__contenido__texto">
+            <h1 class="presentacion__contenido__titulo" data-key="about-title">Sobre mí</h1>
+            <p class="presentacion__contenido__texto" data-key="about-text-1">
                 ¡Hola! Soy Wilmer Gulcochia Sanchez, un desarrollador Full Stack y Analista de Datos apasionado por la tecnología.
                 Me especializo en transformar ideas en soluciones digitales funcionales y atractivas.
                 Mi experiencia abarca Java, React, HTML, CSS y JavaScript, lo que me permite construir desde interfaces de usuario dinámicas hasta robustos sistemas de backend.
                 Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer en el mundo del desarrollo de software.
             </p>
-            <p class="presentacion__contenido__texto">
+            <p class="presentacion__contenido__texto" data-key="about-text-2">
                 Fuera del código, disfruto explorando nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimientos con la comunidad.
                 Creo firmemente en la importancia de un aprendizaje continuo y en la aplicación de las mejores prácticas para entregar productos de alta calidad.
                 Si estás buscando un profesional dedicado y con ganas de hacer la diferencia, ¡me encantaría conectar!
@@ -46,8 +55,9 @@
         </section>
         <img class="presentacion__imagen" src="assets/mi-foto.jpg" alt="Imagen de perfil de Wilmer Gulcochia">
     </main>
+
     <footer class="footer">
-        <p>&copy; 2025 Wilmer Gulcochia Sanchez.</p>
+        <p data-key="footer-text">&copy; 2025 Wilmer Gulcochia Sanchez.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

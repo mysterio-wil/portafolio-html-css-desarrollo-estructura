@@ -216,7 +216,7 @@ ul.presentacion__contenido__texto,
         background-color: transparent; /* Reset background */
         flex-direction: row; /* Horizontal layout for desktop */
         justify-content: flex-start; /* Align links to start */
-        gap: 4rem; /* Restore desktop gap */
+        gap: 2.5rem; /* Restore desktop gap */
         margin-right: auto;
     }
 
@@ -267,6 +267,39 @@ ul.presentacion__contenido__texto,
 }
 
 /* Theme Switch */
+.header__controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adjust as needed */
+}
+
+
+
+.language-select {
+    background-color: var(--color-primario); /* Match body background */
+    border: 2px solid var(--color-terciario);
+    color: var(--color-secundario);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    appearance: none; /* Remove default select arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23F4F4F4%22%20d%3D%22M287%20197.9l-136.2-136.2c-4.7-4.7-12.3-4.7-17%200L5.4%20197.9c-4.7%204.7-4.7%2012.3%200%2017l11.3%2011.3c4.7%204.7%2012.3%204.7%2017%200l115.2-115.2c4.7-4.7%2012.3-4.7%2017%200l115.2%20115.2c4.7%204.7%2012.3%204.7%2017%200l11.3-11.3c4.7-4.7%204.7-12.3%200-17z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    padding-right: 2.5em; /* Make space for the arrow */
+}
+
+.language-select:focus {
+    outline: none;
+    border-color: var(--color-hover);
+}
+
 .theme-switch-wrapper {
     display: flex;
     align-items: center;

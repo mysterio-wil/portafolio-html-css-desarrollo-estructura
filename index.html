@@ -14,40 +14,58 @@
             <span class="header__menu-toggle-icon"></span>
         </button>
         <nav class="header__menu" id="main-menu">
-            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> Sobre mí</a>
-            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> Currículum</a>
-            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> <span data-key="home">Home</span></a>
+            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> <span data-key="about">Sobre mí</span></a>
+            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> <span data-key="curriculum">Currículum</span></a>
+            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-key="contact">Contacto</span></a>
         </nav>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </div>
-            </label>
+
+        <!-- 🔥 Controles (tema + idioma) -->
+        <div class="header__controls">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+            <select class="language-select" id="language-select">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
         </div>
     </header>
-        <main class="presentacion">
-            <section class="presentacion-contenido">
-                <h1 class="presentacion__contenido__titulo">Eleve tu negocio digital a otro nivel <strong class="titulo-destaque">con un Front-end de calidad!</strong> </h1>
-                <p class="presentacion__contenido__texto">¡Hola! Soy Wilmer Gulcochia Sanchez, un desarrollador Full Stack y Analista de Datos apasionado por la tecnología. Con mi experiencia en Java, React, HTML, CSS y JavaScript, me especializo en transformar ideas en soluciones digitales funcionales y atractivas para pequeños negocios y diseñadores. ¿Listo para que construyamos algo increíble juntos?</p>
-                
-                <div class="presentacion__enlaces">
-                    <h2 class="presentacion__enlaces__subtitulo">Acceder a mis redes sociales</h2>
-                    <a class="presentacion__enlaces__btn btn" href="https://www.linkedin.com/in/wilmergulcochia/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a class="presentacion__enlaces__btn btn" href="https://github.com/WilmerGulcochia" target="_blank">
-                        <i class="fab fa-github"></i> GitHub</a>
-                    <a class="presentacion__enlaces__btn btn" href="https://github.com/WilmerGulcochia" target="_blank">
-                        <i class="fab fa-instagram"></i> Instagram</a>
-                </div>
-            </section>
-                        <img class="presentacion__imagen" src="assets/mi-foto.jpg" alt="Imagen de perfil de Wilmer Gulcochia">
-        </main>
+
+    <main class="presentacion">
+        <section class="presentacion-contenido">
+            <h1 class="presentacion__contenido__titulo">
+                <span data-key="main-title">Eleve tu negocio digital a otro nivel</span>
+                <strong class="titulo-destaque"><span data-key="main-title-highlight">con un Front-end de calidad!</span></strong>
+            </h1>
+            <p class="presentacion__contenido__texto" data-key="main-text">
+                ¡Hola! Soy Wilmer Gulcochia Sanchez, un desarrollador Full Stack y Analista de Datos apasionado por la tecnología. Con mi experiencia en Java, React, HTML, CSS y JavaScript, me especializo en transformar ideas en soluciones digitales funcionales y atractivas para pequeños negocios y diseñadores. ¿Listo para que construyamos algo increíble juntos?
+            </p>
+            
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo" data-key="social-media-title">Acceder a mis redes sociales</h2>
+                <a class="presentacion__enlaces__btn btn" href="https://www.linkedin.com/in/wilmergulcochia/" target="_blank">
+                    <i class="fab fa-linkedin"></i> <span data-key="linkedin-btn">LinkedIn</span>
+                </a>
+                <a class="presentacion__enlaces__btn btn" href="https://github.com/WilmerGulcochia" target="_blank">
+                    <i class="fab fa-github"></i> <span data-key="github-btn">GitHub</span>
+                </a>
+                <a class="presentacion__enlaces__btn btn" href="https://github.com/WilmerGulcochia" target="_blank">
+                    <i class="fab fa-instagram"></i> <span data-key="instagram-btn">Instagram</span>
+                </a>
+            </div>
+        </section>
+        <img class="presentacion__imagen" src="assets/mi-foto.jpg" alt="Imagen de perfil de Wilmer Gulcochia">
+    </main>
+
     <footer class="footer">
-        <p>&copy; 2025 Wilmer Gulcochia Sanchez.</p>
+        <p data-key="footer-text">&copy; 2025 Wilmer Gulcochia Sanchez.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

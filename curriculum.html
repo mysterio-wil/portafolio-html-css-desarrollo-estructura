@@ -14,45 +14,58 @@
             <span class="header__menu-toggle-icon"></span>
         </button>
         <nav class="header__menu" id="main-menu">
-            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> Sobre mí</a>
-            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> Currículum</a>
-            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            <a class="header__menu__link" href="index.html"><i class="fa-solid fa-house"></i> <span data-key="home">Home</span></a>
+            <a class="header__menu__link" href="about.html"><i class="fa-solid fa-user"></i> <span data-key="about">Sobre mí</span></a>
+            <a class="header__menu__link" href="curriculum.html"><i class="fa-solid fa-file-lines"></i> <span data-key="curriculum">Currículum</span></a>
+            <a class="header__menu__link" href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-key="contact">Contacto</span></a>
         </nav>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </div>
-            </label>
+
+        <!-- 🔥 Controles (tema + idioma) -->
+        <div class="header__controls">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+            <select class="language-select" id="language-select">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
         </div>
     </header>
+
     <main class="presentacion">
         <section class="presentacion-contenido">
-            <h1 class="presentacion__contenido__titulo">Currículum</h1>
+            <h1 class="presentacion__contenido__titulo" data-key="cv-title">Currículum</h1>
 
             <section>
-                <h2 class="presentacion__contenido__titulo">Contacto</h2>
+                <h2 class="presentacion__contenido__titulo" data-key="cv-contact-title">Contacto</h2>
                 <p class="presentacion__contenido__texto">Email: karlwgs1989@gmail.com</p>
-                <p class="presentacion__contenido__texto">LinkedIn: <a href="https://www.linkedin.com/in/wilmergulcochia" target="_blank">www.linkedin.com/in/wilmergulcochia</a></p>
+                <p class="presentacion__contenido__texto">LinkedIn: 
+                    <a href="https://www.linkedin.com/in/wilmergulcochia" target="_blank">
+                        www.linkedin.com/in/wilmergulcochia
+                    </a>
+                </p>
             </section>
 
             <section>
-                <h2 class="presentacion__contenido__titulo">Extracto</h2>
-                <p class="presentacion__contenido__texto">Profesional en Agronomía, busco oportunidad para desempeñarme en el campo de manejo integrado de cultivos (arroz, plátano, café, cacao, palma aceitera).</p>
-                <p class="presentacion__contenido__texto">Profesional con conocimiento en ArcGIS, Autocad y programas afines.</p>
-                <p class="presentacion__contenido__texto">Estudiante de Diseño y Desarrollo Web Front-End busco oportunidad para adquirir experiencia en diseño y desarrollo de sitios web.</p>
-                <p class="presentacion__contenido__texto">Busco desarrollar el trabajo en equipo, cooperando con todos y con la mayor disposición en enseñar y aprender.</p>
+                <h2 class="presentacion__contenido__titulo" data-key="cv-summary-title">Extracto</h2>
+                <p class="presentacion__contenido__texto" data-key="cv-summary-1">Profesional en Agronomía, busco oportunidad para desempeñarme en el campo de manejo integrado de cultivos (arroz, plátano, café, cacao, palma aceitera).</p>
+                <p class="presentacion__contenido__texto" data-key="cv-summary-2">Profesional con conocimiento en ArcGIS, Autocad y programas afines.</p>
+                <p class="presentacion__contenido__texto" data-key="cv-summary-3">Estudiante de Diseño y Desarrollo Web Front-End busco oportunidad para adquirir experiencia en diseño y desarrollo de sitios web.</p>
+                <p class="presentacion__contenido__texto" data-key="cv-summary-4">Busco desarrollar el trabajo en equipo, cooperando con todos y con la mayor disposición en enseñar y aprender.</p>
             </section>
 
             <section>
-                <h2 class="presentacion__contenido__titulo">Aptitudes principales</h2>
+                <h2 class="presentacion__contenido__titulo" data-key="cv-skills-title">Aptitudes principales</h2>
                 <ul class="presentacion__contenido__texto">
-                    <li>Inteligencia Artificial (IA)</li>
-                    <li>Fundamentos de IA</li>
-                    <li>Machine Learning</li>
+                    <li data-key="cv-skill-ia">Inteligencia Artificial (IA)</li>
+                    <li data-key="cv-skill-fundamentos">Fundamentos de IA</li>
+                    <li data-key="cv-skill-ml">Machine Learning</li>
                     <li>ArcGIS</li>
                     <li>Autocad</li>
                     <li>Java</li>
@@ -64,63 +77,64 @@
             </section>
 
             <section>
-                <h2 class="presentacion__contenido__titulo">Certificaciones</h2>
+                <h2 class="presentacion__contenido__titulo" data-key="cv-certifications-title">Certificaciones</h2>
                 <ul class="presentacion__contenido__texto">
-                    <li>Flexbox: Posicione elementos en la pantalla</li>
-                    <li>Inmersión IA + Google Gemini</li>
-                    <li>Lógica de programación: Conceptos primordiales</li>
-                    <li>Formación Principiante en Programación G4 - ONE</li>
-                    <li>JavaScript: Herencia e Interfaces en Orientación a Objetos</li>
+                    <li data-key="cv-cert-1">Flexbox: Posicione elementos en la pantalla</li>
+                    <li data-key="cv-cert-2">Inmersión IA + Google Gemini</li>
+                    <li data-key="cv-cert-3">Lógica de programación: Conceptos primordiales</li>
+                    <li data-key="cv-cert-4">Formación Principiante en Programación G4 - ONE</li>
+                    <li data-key="cv-cert-5">JavaScript: Herencia e Interfaces en Orientación a Objetos</li>
                 </ul>
             </section>
 
             <section>
-                <h2 class="presentacion__contenido__titulo">Experiencia</h2>
+                <h2 class="presentacion__contenido__titulo" data-key="cv-experience-title">Experiencia</h2>
                 <div class="presentacion__contenido__texto">
                     <h3>Ministerio de Desarrollo Agrario y Riego</h3>
-                    <p>Promotor Geolocalizador</p>
-                    <p>junio de 2025 - Present (4 meses)</p>
+                    <p data-key="cv-exp-1-role">Promotor Geolocalizador</p>
+                    <p data-key="cv-exp-1-date">junio de 2025 - Present (4 meses)</p>
                     <p>Provincia de Marañón, Huánuco, Perú</p>
-                    <p>Promotor de proyectos de geolocalización agrícola con experiencia en iniciativas lideradas por el Ministerio de Desarrollo Agrario y Riego. Especializado en la planificación estratégica de actividades en campo, la capacitación a productores y el uso de herramientas digitales para el registro y georreferenciación de parcelas de cultivos como café, cacao y palma aceitera.</p>
+                    <p data-key="cv-exp-1-desc">Promotor de proyectos de geolocalización agrícola con experiencia en iniciativas lideradas por el Ministerio de Desarrollo Agrario y Riego. Especializado en la planificación estratégica de actividades en campo, la capacitación a productores y el uso de herramientas digitales para el registro y georreferenciación de parcelas de cultivos como café, cacao y palma aceitera.</p>
                 </div>
                 <div class="presentacion__contenido__texto">
                     <h3>Oficina Nacional de Procesos Electorales (ONPE)</h3>
-                    <p>Coordinador de Mesa</p>
-                    <p>septiembre de 2022 - octubre de 2022 (2 meses)</p>
+                    <p data-key="cv-exp-2-role">Coordinador de Mesa</p>
+                    <p data-key="cv-exp-2-date">septiembre de 2022 - octubre de 2022 (2 meses)</p>
                     <p>Aucayacu, Huánuco, Perú</p>
                 </div>
                 <div class="presentacion__contenido__texto">
                     <h3>Municipalidad Distrital de Pucayacu</h3>
-                    <p>Técnico Agrario</p>
-                    <p>octubre de 2021 - mayo de 2022 (8 meses)</p>
+                    <p data-key="cv-exp-3-role">Técnico Agrario</p>
+                    <p data-key="cv-exp-3-date">octubre de 2021 - mayo de 2022 (8 meses)</p>
                     <p>Pucayacu, Huánuco, Perú</p>
                 </div>
                 <div class="presentacion__contenido__texto">
                     <h3>Municipalidad de José Crespo y Castillo</h3>
-                    <p>Técnico de campo</p>
-                    <p>mayo de 2017 - mayo de 2021 (4 años 1 mes)</p>
+                    <p data-key="cv-exp-4-role">Técnico de campo</p>
+                    <p data-key="cv-exp-4-date">mayo de 2017 - mayo de 2021 (4 años 1 mes)</p>
                     <p>Aucayacu, Huánuco, Perú</p>
                     <ul>
-                        <li>Brindé asistencia técnica personalizada y grupal a los participantes de proyecto</li>
-                        <li>Apoyo en el proceso de ejecución del proyecto</li>
-                        <li>Apoyo en la certificación de parcelas orgánicas</li>
-                        <li>Apoyo en las parcelas demostrativas</li>
-                        <li>Coordiné con los beneficiarios de manera individual</li>
+                        <li data-key="cv-exp-4-task-1">Brindé asistencia técnica personalizada y grupal a los participantes de proyecto</li>
+                        <li data-key="cv-exp-4-task-2">Apoyo en el proceso de ejecución del proyecto</li>
+                        <li data-key="cv-exp-4-task-3">Apoyo en la certificación de parcelas orgánicas</li>
+                        <li data-key="cv-exp-4-task-4">Apoyo en las parcelas demostrativas</li>
+                        <li data-key="cv-exp-4-task-5">Coordiné con los beneficiarios de manera individual</li>
                     </ul>
                 </div>
             </section>
 
             <section>
-                <h2 class="presentacion__contenido__titulo">Educación</h2>
+                <h2 class="presentacion__contenido__titulo" data-key="cv-education-title">Educación</h2>
                 <div class="presentacion__contenido__texto">
                     <h3>Universidad Nacional Agraria de la Selva</h3>
-                    <p>Ingeniería, Ingeniería agrónoma y producción vegetal · (2009 - julio de 2014)</p>
+                    <p data-key="cv-education-1">Ingeniería, Ingeniería agrónoma y producción vegetal · (2009 - julio de 2014)</p>
                 </div>
             </section>
         </section>
     </main>
+
     <footer class="footer">
-        <p>&copy; 2025 Wilmer Gulcochia Sanchez.</p>
+        <p data-key="footer-text">&copy; 2025 Wilmer Gulcochia Sanchez.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
