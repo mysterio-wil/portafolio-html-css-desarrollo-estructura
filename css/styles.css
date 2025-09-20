@@ -39,6 +39,9 @@ body{
 }
 
 .header__menu__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     text-decoration: none;
     font-family: var(--fuente-montserrat);
     font-size: 1.5rem;
